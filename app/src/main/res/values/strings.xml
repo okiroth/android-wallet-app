@@ -1,0 +1,73 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <string name="app_name">Cash</string>
+
+    <string name="action_settings">Configuración</string>
+    <string name="action_refresh">Refrescar</string>
+
+    <string name="title_activity_payment">Pagar</string>
+
+    <string name="tomorrow">Mañana</string>
+    <string name="today">Hoy</string>
+
+    <!-- Date format for displaying day of week and date (i.e. Mon Jun 1) [CHAR LIMIT=20] -->
+    <string name="format_full_friendly_date"><xliff:g id="day">%1$s</xliff:g>, <xliff:g id="date">%2$s</xliff:g></string>
+    <string name="point_at_qr">Apunta al código QR</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="qr_encoded_data">QR_DATA_STRINGIFYED</string>
+
+    <string name="pay_details_list_title">Elige de donde pagar</string>
+    <string name="charge_details_list_title">Elige donde recibir el dinero</string>
+
+    <string name="pay_done_ok">Pago realizado con éxito</string>
+    <string name="pay_in_progress">Pagando...</string>
+    <string name="pay_done_fail">El pago no pudo ser realizado</string>
+
+    <string name="title_activity_charge">Pedido de pago</string>
+    <string name="currency_sign">$</string>
+    <string name="chechmark_unicode">✓</string>
+    <string name="done">Listo</string>
+    <string name="errase_unicode">\u25C0</string>
+    <string name="arrow_empty"><![CDATA[<]]></string>
+
+    <string name="enter_pin">Ingresa el PIN de Cash</string>
+    <string name="password_dot">\u2022</string>
+
+    <!-- GENERAL SETTINGS -->
+    <string name="prefskey_user_charge_desc">prefskey_user_charge_desc</string>
+
+
+    <string name="error_payment">Intenta nuevamente en unos momentos. Disculpas.</string>
+
+
+    <string name="enter_cuit_title">CUIT o CUIL</string>
+    <string name="enter_phone_title">Número de Celular</string>
+    <string name="choose_pin_title">PIN de 4 dígitos</string>
+    <string name="title_activity_add_bank">Agrega tu Banco</string>
+    <string name="enter_new_bank_title">Ingresa los datos de tu Homebanking</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="password_pagomiscuentas">Contraseña de Internet (PagoMisCunetas)</string>
+    <string name="select_bank">Selecciona tu banco</string>
+    <string name="add">Agregar</string>
+    <string name="add_bank_account">Agregar cuenta de banco</string>
+    <string name="lock_wallet">Cerrar Cash</string>
+    <string name="delete_bank">Eliminar Banco</string>
+    <string name="accept">Aceptar</string>
+    <string name="coordinates_card">Tarjeta de coordenadas</string>
+
+    <string name="domain">qr.cashpagos.com</string>
+    <string name="domain_www">www.qr.cashpagos.com</string>
+    <string name="register_payment_ok">REGISTER_NEW_PAYMENT</string>
+    <string name="share">Compartir</string>
+
+    <string name="title_activity_user_data">CASH</string>
+    <string name="welcome_text">Completa tus datos para comenzar a utilizar Cash.</string>
+    <string name="start">Comenzar</string>
+    <string name="next">Siguiente</string>
+
+
+</resources>

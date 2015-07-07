@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grey">#eee</color>
+    <color name="grey2">#a7a7a7</color>
+    <color name="grey3">#333</color>
+
+    <color name="app_main_color">#FF459AEB</color>
+    <color name="app_main_color2">#ffebd859</color>
+
+    <color name="app_main_color_dark">#0288D1</color>
+    <color name="app_main_color_light">#ffd1eeff</color>
+    <color name="white">#ffffff</color>
+    <color name="grey4">#646464</color>
+    <color name="black">#000000</color>
+
+    <color name="background_holo_dark">#ff000000</color>
+    <color name="background_holo_light">#fff3f3f3</color>
+
+    <!-- Main green for button -->
+    <color name="green1">#ff32c649</color>
+    <color name="green2">#ff259f33</color>
+
+    <!-- Darker green for button -->
+    <color name="orange1">#fff08720</color>
+    <color name="orange2">#ffcc731b</color>
+
+    <color name="red2">#ffcc392e</color>
+
+    <color name="background_general_app">#fff</color>
+    <color name="background_dark_general_app">#ffececec</color>
+
+</resources>

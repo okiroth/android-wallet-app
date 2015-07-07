@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ic_launcher"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/border_set">
+    </FrameLayout>
+
+    <LinearLayout
+        android:onClick="leftMenuAddNewBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="?android:attr/borderlessButtonStyle"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        >
+
+        <ImageView
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:text="@string/add_bank_account"
+            android:layout_width="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:onClick="leftMenuLockWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="?android:attr/borderlessButtonStyle"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        >
+
+        <ImageView
+            android:src="@android:drawable/ic_lock_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/lock_wallet"
+            android:layout_width="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/border_set">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/banks_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:layout_gravity="bottom">
+    </FrameLayout>
+
+</LinearLayout>

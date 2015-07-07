@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.palebluepagos.androidwallet.pay.ReadQrActivity"
+    tools:ignore="MergeRootFrame"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/camera_qr_reader_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:layout_gravity="center_horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/camera_result"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/point_at_qr"
+        android:layout_gravity="center"
+        android:paddingTop="20dp" />
+</LinearLayout>

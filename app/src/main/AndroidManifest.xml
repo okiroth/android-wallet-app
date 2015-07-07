@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.palebluepagos.androidwallet" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/domain"
+                    android:pathPrefix="/qr/"
+                    android:scheme="http" />
+
+                <data
+                    android:host="@string/domain"
+                    android:pathPrefix="/p/"
+                    android:scheme="http" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".user.UserDataActivity"
+            android:label="@string/title_activity_user_data"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name=".pay.ReadQrActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.palebluepagos.androidwallet.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".pay.PayActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.palebluepagos.androidwallet.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".accounts.AddNewBankActivity"
+            android:parentActivityName=".HomeActivity"
+            android:label="@string/title_activity_add_bank"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.palebluepagos.androidwallet.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".charge.ChargeActivity"
+            android:label="@string/title_activity_charge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.palebluepagos.androidwallet.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.palebluepagos.androidwallet.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="SYS_PBD_WL_02.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="24" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="false" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.palebluepagos.androidwallet.models" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:background="@drawable/touch_selector"
+    android:padding="16dp"
+    android:focusable="false"
+    android:baselineAligned="false">
+
+    <ImageView
+        android:id="@+id/list_item_bank_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/list_item_bank_name"
+        android:layout_width="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_weight="8"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/ic_remove_bank"
+        android:src="@android:drawable/ic_menu_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+    />
+
+</LinearLayout>
+

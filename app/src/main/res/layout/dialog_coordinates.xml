@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/card_layout"
+              android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_gravity="left"
+        android:text="@string/coordinates_card"
+        android:textColor="@color/white"
+        android:background="@color/app_main_color"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="F5"
+            android:id="@+id/coordenanda0_key"
+            android:textSize="40sp"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"/>
+
+        <EditText
+            android:id="@+id/coordenanda0_edittext"
+            android:textSize="40sp"
+            android:padding="10dp"
+            android:maxLength="2"
+            android:minWidth="80dp"
+            android:inputType="number"
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="I1"
+            android:id="@+id/coordenanda1_key"
+            android:textSize="40sp"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"/>
+
+        <EditText
+            android:id="@+id/coordenanda1_edittext"
+            android:textSize="40sp"
+            android:padding="10dp"
+            android:maxLength="2"
+            android:minWidth="80dp"
+            android:inputType="number"
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:text="@string/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/app_main_color"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

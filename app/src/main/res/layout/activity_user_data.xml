@@ -1,0 +1,246 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:layout_width="272dp"
+        android:layout_height="82dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/new_user_data_step0"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/card_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_text"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:onClick="goCuit"
+            android:background="@drawable/white_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/app_main_color"
+            android:text="@string/start"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/new_user_data_step_cuit"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/card_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:text="@string/enter_cuit_title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"
+            android:text="Debes ser el titular o autorizado de la cuentas de bancos que utilices." />
+
+        <EditText
+            android:id="@+id/userdata_cuit_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:textSize="20sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:onClick="goPhone"
+            android:background="@drawable/white_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/app_main_color"
+            android:text="@string/next"
+            android:layout_marginTop="30dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/new_user_data_step_phone"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/card_layout">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:text="@string/enter_phone_title"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/black"
+                android:text="Sin el 0 y sin el 15. Controla que sea el número correcto ya que en este celular recibiras notificaciones de tus pagos y cobros. (Ejemplo 2944700123)." />
+
+            <EditText
+                android:id="@+id/userdata_phone_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:textSize="30sp"
+                android:layout_weight="1" />
+
+        <Button
+            android:onClick="goPin"
+            android:background="@drawable/white_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/app_main_color"
+            android:text="@string/next"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/new_user_data_step_pin"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/card_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:text="@string/choose_pin_title"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/black"
+            android:text="Con este PIN de 4 dígitos podras bloquear el acceso a tu billitera Cash y proteger tus datos." />
+
+        <EditText
+            android:id="@+id/userdata_pin_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:singleLine="true"
+            android:maxLength="4"
+            android:textSize="30sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:onClick="doneUserSteps"
+            android:background="@drawable/white_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/app_main_color"
+            android:text="@string/done"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/new_user_data_step_loading"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/card_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            android:text="Creando una nueva billetera Cash..." />
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

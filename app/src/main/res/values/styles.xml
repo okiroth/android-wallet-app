@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/app_main_color</item>
+        <item name="colorPrimaryDark">@color/app_main_color_dark</item>
+        <item name="android:colorBackground">@color/background_general_app</item>
+    </style>
+
+    <!-- MainActivity theme -->
+    <style name="HomeStyle" parent="AppTheme">
+    </style>
+
+    <style name="AccountsListStyle">
+        <!-- Here it's a stub.  In screens of sufficient width, this style includes modifications
+        for two-pane layout -->
+    </style>
+    
+    <style name="ButtonsTopSection">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">30</item>
+        <item name="android:textSize">50dp</item>
+        <item name="android:textColor">@drawable/touch_selector_top</item>
+        <item name="android:clickable">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="PagerTabStripText">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_accounts_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+
+    <ProgressBar
+        android:id="@+id/fetching_data_home_screen_animation"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:background="@drawable/round_progress_bar"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"/>
+
+    <ListView
+        android:id="@+id/accouts_listview"
+        style="@style/AccountsListStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:divider="@null"
+        >
+    </ListView>
+
+
+</FrameLayout>

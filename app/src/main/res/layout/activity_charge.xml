@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/charge_description_section"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:onClick="cancelNewDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Cancelar"
+                android:background="@drawable/white_button"
+                android:layout_gravity="bottom"
+                />
+
+            <Button
+                android:id="@+id/button_ok"
+                android:onClick="acceptNewDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="Aceptar"
+                android:background="@drawable/white_button"
+                android:layout_gravity="bottom"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/charge_desc_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="left|top"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:selectAllOnFocus="true"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/numpad_inner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="60sp"
+                android:fontFamily="sans-serif-thin"
+                android:layout_weight="1"
+                android:text="@string/currency_sign"
+                />
+
+            <TextView
+                android:id="@+id/charge_detail_amount"
+                android:layout_weight="9"
+                android:textSize="60sp"
+                android:inputType="numberDecimal"
+                android:fontFamily="sans-serif-thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/charge_desc_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/charge_desc_display"
+            android:textColor="@color/grey2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="top|left"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"/>
+
+        <Button
+            android:id="@+id/edition_pencil_icon"
+            android:onClick="editDesc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:drawable/ic_menu_edit"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/numpad_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/charge_accounts_title"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/charge_details_list_title"
+                android:layout_gravity="left|top"
+                android:layout_marginLeft="20dp"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/charge_details_choose_list"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/charge_new_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/share_qr_button"
+            android:visibility="gone"
+            android:text="Compartir"
+            android:onClick="shareQrData"
+            android:background="@drawable/white_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/app_main_color"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

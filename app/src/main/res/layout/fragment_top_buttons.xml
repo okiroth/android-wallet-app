@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/pay_super_button"
+            android:onClick="payCashPending"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Sync"
+            android:textSize="60sp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/app_main_color"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/pay_button"
+            android:onClick="startPaymentActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Pagar"
+            android:textSize="60sp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/app_main_color"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/border_set"/>
+
+        <Button
+            android:id="@+id/charge_button"
+            android:onClick="startChargeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Cobrar"
+            android:textSize="60sp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/app_main_color"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+</LinearLayout>
+
